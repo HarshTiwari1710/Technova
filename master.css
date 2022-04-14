@@ -1,0 +1,199 @@
+a{
+  text-decoration: none;
+}
+
+body {
+  animation: pageLoad 0.75s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 3% 5%;
+  background-color: white;
+}
+
+.collapse {
+  text-align: right;
+}
+
+nav h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: auto 0;
+  cursor: pointer;
+}
+nav h3 a {
+  text-decoration: none;
+  color: #00b4d8;
+}
+
+nav h3 a:hover {
+  color: #00b4d8;
+}
+nav ul {
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #7d7987;
+}
+
+.underline:hover {
+  color: #ff00d6;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff00d6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.underline:hover::before {
+  transform: scaleX(1);
+  transition: 0.3s ease-in-out;
+}
+
+.highlight {
+  color: #90e0ef;
+  text-decoration: underline;
+}
+
+.highlight:hover {
+  color: #90e0ef;
+}
+.btn-explore {
+  background: linear-gradient(#01d1db, #00add8);
+  padding: 10px 30px;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-explore:hover {
+  background: linear-gradient(#01d1db, #41bdda);
+  transition: 0.4s ease-in-out;
+}
+@keyframes pageLoad {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #00add8;
+  display: flex;
+  justify-content: space-around;
+  padding: 3% 0 2%;
+  position: relative;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  margin: auto 0;
+  display: inline;
+}
+
+footer ul li {
+  margin: 20px 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+footer ul li a {
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+}
+.socials{
+  margin-top: 0;
+  max-width: 35%;
+}
+
+.socials ul li {
+  list-style: none;
+  margin: 5px;
+}
+.technova-logo{
+  max-width: 20%;
+  display: none;
+}
+
+.footer-btn p {
+  margin-left: -50px;
+  color: hsl(233, 8%, 62%);
+}
+
+.links {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0 50px;
+}
+.links {
+  font-size: 0.9rem;
+}
+
+.links a {
+  color: #ffff;
+}
+
+.links a:hover {
+  color: #8ed5bd;
+}
+.socials svg path:hover {
+  fill: #8ed5bd;
+  cursor: pointer;
+}
+.footer-btn .btn-request:hover{
+  opacity: 0.9;
+}
+.footer-btn .email{
+  color: white;
+}
+
+
+.contact {
+  text-align: right;
+}
+.copyright {
+  position: absolute;
+  display: inline;
+}
+
+.down {
+  transform: translate(0%, 0%);
+  transition: transform 1s ease-in-out;
+}
+
+.down:hover {
+  transform: translate(0%, 10%);
+  transition: transform 1s ease-in-out;
+  position: relative;
+}

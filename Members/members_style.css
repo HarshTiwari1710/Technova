@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;800&family=Public+Sans:wght@300;400;700&display=swap");
+*{
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Mulish", sans-serif;
+}
+
+small {
+  color: #7d7987;
+}
+p {
+  margin-bottom: 0.3rem;
+}
+
+/* Members  */
+
+.head-members {
+  height: 100vh;
+  text-align: center;
+  padding: 5% 0;
+  position: relative;
+}
+.head-members .row {
+  width: 80%;
+  background-color: #e5f8fc;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+.containersample {
+  padding: 6% 0;
+}
+.containersample p {
+  color: #7d7987;
+  font-size: 0.9rem;
+}
+.members-container h4 {
+  color: #00b4d8;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.head-heading {
+  margin-bottom: 20px;
+}
+
+.head-members .containersample img {
+  max-width: 60%;
+}
+.containersample h5 {
+  margin-top: 20px;
+  color: #00b4d8;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.containersample small {
+  color: #00b4d8;
+  font-weight: 500;
+}
+
+.head-members .containersample small {
+  color: #7d7987;
+}
+
+@media only screen and (max-width: 992px) {
+  .head-members {
+    height: auto;
+    padding: 0;
+  }
+
+  .head-members .containersample img {
+    max-width: 30%;
+  }
+
+  .web-developers .member img {
+    max-width: 10%;
+  }
+  .head-members .row {
+    gap: 5px;
+    max-width: 100%;
+  }
+  .technova-members-container .heading .team {
+    max-width: 10%;
+  }
+  .head-members .members-container .head-heading .team {
+    max-width: 10%;
+  }
+}
+
+.head-members .top-dots {
+  max-width: 150px;
+  position: absolute;
+  left: 0;
+}
+
+/* Faculty Coordinators  */
+
+.faculty-coordinators {
+  text-align: center;
+  color: #00b4d8;
+  position: relative;
+  height: 100vh;
+}
+.faculty-coordinators-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.faculty-coordinators .row {
+  max-width: 80%;
+  background-color: #e5f8fc;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.faculty-coordinators .containersample img {
+  max-width: 50%;
+}
+
+.faculty-coordinators .top-dots {
+  position: absolute;
+  right: 0;
+  max-width: 150px;
+}
+.faculty-coordinators .bottom-dots {
+  position: absolute;
+  left: 0;
+  max-width: 150px;
+}
+.faculty-coordinators .containersample {
+  padding: 3% 0;
+}
+.faculty-coordinators h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.faculty-desc {
+  margin-top: 20px;
+}
+.faculty-desc p {
+  color: #00b4d8;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.faculty-desc small {
+  color: #7d7987;
+}
+@media only screen and (max-width: 800px){
+  .faculty-coordinators{
+    height: auto;
+    text-align: center;
+  }
+}
+
+/* Website Developers  */
+.web-developers {
+  padding: 3% 0;
+  text-align: center;
+  color: #00b4d8;
+  position: relative;
+  height: 130vh;
+}
+
+.web-developers-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.web-developers-container img {
+  max-width: 50%;
+}
+
+.web-developers-container h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.web-developers .row {
+  gap: 0px 0;
+}
+.web-developers .description {
+  transform: translateY(-80%);
+}
+.member h6 {
+  font-weight: 600;
+}
+.member p {
+  color: #7d7987;
+}
+.member small {
+  color: #00b4d8;
+}
+
+.web-developers .top-dots {
+  position: absolute;
+  right: 0;
+  max-width: 150px;
+}
+
+.web-developers .bottom-dots {
+  position: absolute;
+  left: 0;
+  max-width: 150px;
+}
+.web-developers .half{
+  max-width: 15%;
+}
+.web-developers .moveUp{
+  transform: translateY(10%);
+}
+@media only screen and (max-width: 800px){
+  .web-developers{
+    height: auto;
+  }
+  .technova-members{
+    height: auto;
+  }
+  .all-clubs{
+    height: auto;
+  }
+}
+
+/* Technova team  */
+.technova-members {
+  text-align: center;
+  height: 100vh;
+  padding: 2% 0;
+  color: #00b4d8;
+  position: relative;
+}
+.technova-members-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.technova-members .containersample {
+  padding: 2% 5%;
+}
+
+.technova-members-container h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.technova-members .containersample p {
+  font-size: 0.9rem;
+}
+.technova-members .row {
+  max-width: 100%;
+  background-color: #e5f8fc;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+.technova-members .containersample img {
+  max-width: 70%;
+}
+.technova-members .containersample .smaller-img {
+  max-width: 60%;
+}
+
+.team {
+  max-width: 3%;
+}
+
+.technova-member h6 {
+  margin-top: 10px;
+}
+
+.technova-member small {
+  font-weight: 600;
+}
+
+.technova-members .top-dots {
+  position: absolute;
+  right: 0;
+  max-width: 150px;
+}
+
+.technova-members .center-dots {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  max-width: 150px;
+}
+.head{
+  margin-top: 0;
+}
+
+.coordinators h4{
+  font-size: 1.5rem;
+}
+.coordinators ul li{
+  margin-right: 30px;
+  color: #7d7987;
+}
+.volunteers ul li{
+  margin-right: 25px;
+  color: #7d7987;
+}
+.volunteers h4{
+  font-size: 1.5rem;
+}
+
+/* ALL CLUBS  */
+
+/* Entrepreuners club  */
+
+.all-clubs {
+  max-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: conter;
+  align-items: center;
+  position: relative;
+  padding: 10% 0 5%;
+}
+.all-clubs .row {
+  width: 80%;
+  background-color: #caf1f8;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+.all-clubs img{
+  max-width: 50%;
+}
+
+.all-clubs .containersample {
+  padding: 3% 0 1%;
+}
+
+.all-clubs h4 {
+  margin-top: 20px;
+}
+
+
+.all-clubs .clubs-top-dots {
+  position: absolute;
+  right: 0;
+  max-width: 150px;
+  top: 50px;
+}
+.entreprenuers-club .volunteers{
+  transform: translateY(-35%);
+}
+.transform{
+  transform: translateY(-15%);
+}
+.all-clubs .clubs-bottom-dots {
+  position: absolute;
+  left: 0;
+  max-width: 150px;
+  bottom: 10px;
+}
+.cyber-pirates .volunteers{
+  transform: translateY(-25%);
+}
+
+.gdsc .volunteers{
+  transform: translateY(-18%);
+}
+.smaller {
+  max-width: 60%;
+}
+
+.gdsc-leader {
+  max-width: 59%;
+}
+
+.tech-hub{
+  padding: 20% 0%;
+}
+
+@media only screen and (max-width: 800px){
+
+}
