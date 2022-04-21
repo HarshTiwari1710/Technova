@@ -1,388 +1,393 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;800&family=Public+Sans:wght@300;400;700&display=swap");
-*{
-  list-style: none;
+body{
+    overflow-x: hidden;
+}
+:root{
+    --container: #caf0f8;
+    --heading-blue: #00a5d0;
+    --content: #7d7987;
+}
+section{
+    position: relative;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: "Mulish", sans-serif;
+.members-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.faculty-heading i{
+    color: var(--heading-blue);
+    font-size: 3rem;
 }
 
-small {
-  color: #7d7987;
+.head-faculties{
+    padding: 5%;
 }
-p {
-  margin-bottom: 0.3rem;
+.faculty-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
 }
-
-/* Members  */
-
-.head-members {
-  height: 100vh;
-  text-align: center;
-  padding: 5% 0;
-  position: relative;
+.faculty-heading h1{
+    margin: 0 20px;
+    color: var(--heading-blue);
+    font-weight: 600;
+    font-size: 2rem;
 }
-.head-members .row {
-  width: 80%;
-  background-color: #e5f8fc;
-  border-radius: 35px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: auto;
+.faculty-container{
+    text-align: center;
+    padding: 5% 5% 3%;
+    background-color: var(--container);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 80px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
 }
-.containersample {
-  padding: 6% 0;
-}
-.containersample p {
-  color: #7d7987;
-  font-size: 0.9rem;
-}
-.members-container h4 {
-  color: #00b4d8;
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-.head-heading {
-  margin-bottom: 20px;
+.faculty-container img{
+    height: 200px;
 }
 
-.head-members .containersample img {
-  max-width: 60%;
+.info h5{
+    color: var(--heading-blue);
+    margin: 10px 0;
 }
-.containersample h5 {
-  margin-top: 20px;
-  color: #00b4d8;
-  font-weight: 600;
-  font-size: 1rem;
-}
-.containersample small {
-  color: #00b4d8;
-  font-weight: 500;
+.info small{
+    color: var(--content);
 }
 
-.head-members .containersample small {
-  color: #7d7987;
-}
-
-@media only screen and (max-width: 992px) {
-  .head-members {
-    height: auto;
-    padding: 0;
-  }
-
-  .head-members .containersample img {
-    max-width: 30%;
-  }
-
-  .web-developers .member img {
-    max-width: 10%;
-  }
-  .head-members .row {
-    gap: 5px;
-    max-width: 100%;
-  }
-  .technova-members-container .heading .team {
-    max-width: 10%;
-  }
-  .head-members .members-container .head-heading .team {
-    max-width: 10%;
-  }
-}
-
-.head-members .top-dots {
-  max-width: 150px;
-  position: absolute;
-  left: 0;
+@media only screen and (max-width: 1000px){
+    .head-faculties{
+        text-align: center;
+    }
+    .faculty-heading{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .faculty-container{
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+    .faculty-container img{
+        height: auto;
+    }
 }
 
 /* Faculty Coordinators  */
-
-.faculty-coordinators {
-  text-align: center;
-  color: #00b4d8;
-  position: relative;
-  height: 100vh;
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
 }
-.faculty-coordinators-container {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
+.faculty-coordinators{
+    padding: 5%;
 }
-
-.faculty-coordinators .row {
-  max-width: 80%;
-  background-color: #e5f8fc;
-  border-radius: 35px;
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
+.faculty-coordinators i{
+    font-size: 3rem;
+    color: var(--heading-blue);
 }
-
-.faculty-coordinators .containersample img {
-  max-width: 50%;
-}
-
-.faculty-coordinators .top-dots {
-  position: absolute;
-  right: 0;
-  max-width: 150px;
-}
-.faculty-coordinators .bottom-dots {
-  position: absolute;
-  left: 0;
-  max-width: 150px;
-}
-.faculty-coordinators .containersample {
-  padding: 3% 0;
-}
-.faculty-coordinators h4 {
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-.faculty-desc {
-  margin-top: 20px;
-}
-.faculty-desc p {
-  color: #00b4d8;
-  font-weight: 600;
-  font-size: 1rem;
-}
-.faculty-desc small {
-  color: #7d7987;
-}
-@media only screen and (max-width: 800px){
-  .faculty-coordinators{
-    height: auto;
+.faculty-club-container{
+    background-color: var(--container);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    padding: 5% 5% 3%;
     text-align: center;
-  }
 }
 
-/* Website Developers  */
-.web-developers {
-  padding: 3% 0;
-  text-align: center;
-  color: #00b4d8;
-  position: relative;
-  height: 130vh;
+.faculty-club-container-2{
+    background-color: var(--container);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    padding: 5% 5% 3%;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
-.web-developers-container {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-}
-.web-developers-container img {
-  max-width: 50%;
+
+@media only screen and (max-width: 1000px){
+    .faculty-coordinators{
+        padding-bottom: 10%;
+    }
+    .faculty-club-container{
+        grid-template-columns: auto;
+        gap: 30px;
+        width: 100%;
+    }
+    .faculty-club-container-2{
+        grid-template-columns: auto;
+        gap: 30px;
+    }
 }
 
-.web-developers-container h4 {
-  font-size: 1.8rem;
-  font-weight: 600;
+/* WEB DEVELEPORS  */
+.web-devs{
+    padding: 4%;
+    text-align: center;
 }
-.web-developers .row {
-  gap: 0px 0;
+.web-devs .faculty-heading{
+    margin-bottom: 0;
 }
-.web-developers .description {
-  transform: translateY(-80%);
+.web-devs img{
+    height: 150px;
 }
-.member h6 {
-  font-weight: 600;
+.small{
+    height: 200px;
 }
-.member p {
-  color: #7d7987;
-}
-.member small {
-  color: #00b4d8;
-}
-
-.web-developers .top-dots {
-  position: absolute;
-  right: 0;
-  max-width: 150px;
+.web-dev-container{
+    width: 100%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 70px;
 }
 
-.web-developers .bottom-dots {
-  position: absolute;
-  left: 0;
-  max-width: 150px;
+.web-dev-container .info small{
+    color: var(--heading-blue);
 }
-.web-developers .half{
-  max-width: 15%;
+.web-dev-container .info h6{
+    color: var(--content);
 }
-.web-developers .moveUp{
-  transform: translateY(10%);
+@media only screen and (max-width: 1000px){
+
+    .web-dev-container{
+        grid-template-columns: auto;
+        gap: 50px;
+    }
 }
-@media only screen and (max-width: 800px){
-  .web-developers{
-    height: auto;
-  }
-  .technova-members{
-    height: auto;
-  }
-  .all-clubs{
-    height: auto;
-  }
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .web-dev-container{
+        grid-template-columns: auto auto;
+    }
 }
 
-/* Technova team  */
-.technova-members {
-  text-align: center;
-  height: 100vh;
-  padding: 2% 0;
-  color: #00b4d8;
-  position: relative;
+/* TEAM OF TECHNOVA  */
+.team-technova{
+    padding: 5%;
 }
-.technova-members-container {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
+.team-technova img{
+    height: 150px;
 }
-.technova-members .containersample {
-  padding: 2% 5%;
+.team-technova .faculty-club-container{
+    column-gap: 40px;
 }
-
-.technova-members-container h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
+.team-technova .faculty-club-container-2{
+    column-gap: 20px;
 }
-.technova-members .containersample p {
-  font-size: 0.9rem;
+.team-technova h6{
+    font-size: 0.9rem;
 }
-.technova-members .row {
-  max-width: 100%;
-  background-color: #e5f8fc;
-  border-radius: 35px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: auto;
+.team-technova .info small{
+    color: var(--heading-blue);
 }
-.technova-members .containersample img {
-  max-width: 70%;
-}
-.technova-members .containersample .smaller-img {
-  max-width: 60%;
+.team-technova .info h6{
+    color: var(--content);
 }
 
-.team {
-  max-width: 3%;
+
+/* CLUBS  */
+
+.club{
+    padding: 5%;
+    text-align: center;
+}
+.club .info h5 {
+    color: var(--content);
+}
+.club .info h6{
+    color: var(--heading-blue);
+}
+.club-heading{
+    margin: 20px 0;
+    color: var(--heading-blue);
+}
+.club-heading h3{
+    font-weight: 800;
+}
+.translate{
+    transform: translateY(3%);
+}
+.club-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5%;
+    gap: 80px;
+    justify-content: space-between;
+    background-color: var(--container);
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.github-club .club-container{
+    gap: 110px;
+}
+.gdsc-club .club-container{
+    gap: 110px;
+}
+.game-drifters-club .club-container{
+    gap: 100px;
+}
+.cyber-pirates-club .club-container{
+    gap: 70px;
 }
 
-.technova-member h6 {
-  margin-top: 10px;
+/* COORDINATORS  */
+.coordinators{
+    padding: 5%;
+    text-align: center;
+    width: 100%;
+}
+.main-container{
+    display: grid;
+    gap: 50px;
+}
+.coordinator-heading{
+    text-align: center;
+    margin: 30px 0;
+}
+.coordinator-heading h1{
+    margin: 0 20px;;
+    color: var(--heading-blue);
+    font-weight: 600;
+    font-size: 2rem;
+}
+.coordinators h3{
+    font-size: 1.2rem;
+    color: var(--heading-blue);
+    margin: 10px 0;
+}
+.coordinators-container-1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    gap: 20px;
+}
+.coordinators-container-2{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
 }
 
-.technova-member small {
-  font-weight: 600;
+.coordinators .coordinator {
+    background-color: var(--container);
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+}
+.coordinators .coordinator{
+    width: 100%;
+    padding: 30px 50px 20px;
 }
 
-.technova-members .top-dots {
-  position: absolute;
-  right: 0;
-  max-width: 150px;
+.coordinators img{
+    height: 90px;
+    border-radius: 50%;
 }
-
-.technova-members .center-dots {
-  position: absolute;
-  left: -60px;
-  top: 50%;
-  max-width: 150px;
-}
-.head{
-  margin-top: 0;
-}
-
-.coordinators h4{
-  font-size: 1.5rem;
+.coordinators ul {
+    padding: 0;
 }
 .coordinators ul li{
-  margin-right: 30px;
-  color: #7d7987;
+    color: var(--content);
 }
-.volunteers ul li{
-  margin-right: 25px;
-  color: #7d7987;
-}
-.volunteers h4{
-  font-size: 1.5rem;
+.coordinators i{
+    color: var(--heading-blue);
+    font-size: 2.5rem;
 }
 
-/* ALL CLUBS  */
+@media only screen and (max-width: 1000px){
+    .club-container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 40px;
+        text-align: center;
+    }
 
-/* Entrepreuners club  */
+    .coordinators-container-1{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+    .coordinators-container-2{
+        display: grid;
+        gap: 40px;
+        grid-template-columns: auto;
+    }
+    .coordinators .coordinators-container-2 .coordinator{
+        padding: 30px 70px 20px;
+    }
+    .github-club .club-container{
+        gap: 60px;
+    }
+    .gdsc-club .club-container{
+        gap: 60px;
+    }
+    .game-drifters-club .club-container{
+        gap: 60px;
+    }
+    .cyber-pirates-club .club-container{
+        gap: 60px;
+    }
+    .translate{
+        transform: translateY(0%);
+    }
+    
+}
+.top-dots{
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    height: 70px;
+  }
 
-.all-clubs {
-  max-height: 100vh;
-  text-align: center;
-  display: flex;
-  justify-content: conter;
-  align-items: center;
-  position: relative;
-  padding: 10% 0 5%;
-}
-.all-clubs .row {
-  width: 80%;
-  background-color: #caf1f8;
-  border-radius: 35px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: auto;
-}
-.all-clubs img{
-  max-width: 50%;
-}
+  @media only screen and (max-width: 290px){
+        .web-dev-container{
+            width: auto;
+        }
+        .web-devs h5{
+            font-size: 1.2rem;
+        }
+         .web-devs h6{
+            font-size: 0.8rem;
+        }
+        .team-technova{
+            padding: 0;
+        }
+        .team-technova .container{
+            padding: 0;
+        }
+        .team-technova h5{
+            font-size: 1rem;
+        }
+        .team-technova h6{
+            font-size: 0.8rem;
+        }
+        .club{
+            padding-bottom: 20px;
+        }
+        .club h5{
+            font-size: 1.2rem;
+        }
+        .club h6 {
+            font-size: 0.8rem;
+        }
 
-.all-clubs .containersample {
-  padding: 3% 0 1%;
-}
-
-.all-clubs h4 {
-  margin-top: 20px;
-}
-
-
-.all-clubs .clubs-top-dots {
-  position: absolute;
-  right: 0;
-  max-width: 150px;
-  top: 50px;
-}
-.entreprenuers-club .volunteers{
-  transform: translateY(-35%);
-}
-.transform{
-  transform: translateY(-15%);
-}
-.all-clubs .clubs-bottom-dots {
-  position: absolute;
-  left: 0;
-  max-width: 150px;
-  bottom: 10px;
-}
-.cyber-pirates .volunteers{
-  transform: translateY(-25%);
-}
-
-.gdsc .volunteers{
-  transform: translateY(-18%);
-}
-.smaller {
-  max-width: 60%;
-}
-
-.gdsc-leader {
-  max-width: 59%;
-}
-
-.tech-hub{
-  padding: 20% 0%;
-}
-
-@media only screen and (max-width: 800px){
-
-}
+  }
