@@ -247,7 +247,9 @@ section{
 .cyber-pirates-club .club-container{
     gap: 70px;
 }
-
+.modified{
+    height: 200px;
+}
 /* COORDINATORS  */
 .coordinators{
     padding: 5%;
@@ -349,7 +351,7 @@ section{
     .translate{
         transform: translateY(0%);
     }
-    
+
 }
 .top-dots{
     position: absolute;
