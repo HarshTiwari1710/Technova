@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;800&family=Public+Sans:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Mulish", sans-serif;
+}
+/* Header section  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 3% 5%;
+  background-color: white;
+}
+
+.collapse {
+  text-align: right;
+}
+.nav-item {
+  margin-top: 20px;
+}
+
+nav h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: auto 0;
+  cursor: pointer;
+}
+nav h3 a {
+  text-decoration: none;
+  color: #00b4d8;
+}
+
+nav h3 a:hover {
+  color: #00b4d8;
+}
+nav ul {
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #7d7987;
+}
+
+.underline:hover {
+  color: #90e0ef;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #90e0ef;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.underline:hover::before {
+  transform: scaleX(1);
+  transition: 0.3s ease-in-out;
+}
+
+.highlight {
+  color: #90e0ef;
+  text-decoration: underline;
+}
+
+.highlight:hover {
+  color: #90e0ef;
+}
+
+/* Members  */
+
+.head-members {
+  height: 100vh;
+  text-align: center;
+  padding: 8% 0;
+}
+.head-members .row {
+  width: 80%;
+  background-color: #e5f8fc;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+.containersample {
+  padding: 6% 0;
+}
+.members-container h4 {
+  margin-bottom: 20px;
+  color: #00b4d8;
+  font-weight: 600;
+}
+
+/* .hod {
+  max-width: 100%;
+}
+.dean {
+  max-width: 100%;
+}
+
+.head {
+  max-width: 100%;
+} */
+
+.containersample img {
+  max-width: 50%;
+}
+.containersample h5 {
+  margin-top: 20px;
+  color: #00b4d8;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.containersample small {
+  color: #00b4d8;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 992px) {
+  .head-members {
+    padding: 0;
+  }
+
+  .head-members .containersample img {
+    max-width: 20%;
+  }
+}
+/* Website Developers  */
+.web-developers {
+  height: 100vh;
+  padding: 4% 0;
+  text-align: center;
+  color: #00b4d8;
+}
+
+.web-developers-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.web-developers .row {
+  gap: 30px 0;
+}
+.web-developers img {
+  max-width: 30%;
+}
+
+.web-developers .half {
+  max-width: 20%;
+}
+
+.member h6 {
+  font-weight: 600;
+}
+
+/* Technova team  */
+.technova-members {
+  text-align: center;
+  height: 100vh;
+  padding: 5% 0;
+}
+.technova-members-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.technova-members .row {
+  gap: 10px 0;
+}
+.technova-member img {
+  max-width: 10%;
+}
+.technova-member .half {
+  max-width: 20%;
+}

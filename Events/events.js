@@ -1,6 +1,8 @@
+const explore = document.querySelector(".btn-explore");
 
-
-
+explore.addEventListener("click", function () {
+  window.scrollTo(0, 810.4000244140625);
+});
 const slides = [
   {
     url: "/Events/events_img/1635507415192.jpg",

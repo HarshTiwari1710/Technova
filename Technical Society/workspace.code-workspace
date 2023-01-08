@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "Technical Society",
+		"path": "."
+	},
+	{
+		"name": "img",
+		"path": "..\\img"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Technical Society"
+  }
+}

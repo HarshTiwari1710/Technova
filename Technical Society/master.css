@@ -1,0 +1,15 @@
+body {
+  animation: pageLoad 0.75s;
+}
+
+@keyframes pageLoad {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

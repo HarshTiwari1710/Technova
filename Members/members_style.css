@@ -1,395 +1,320 @@
-body{
-    overflow-x: hidden;
-}
-:root{
-    --container: #caf0f8;
-    --heading-blue: #00a5d0;
-    --content: #7d7987;
-}
-section{
-    position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;800&family=Public+Sans:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Mulish", sans-serif;
 }
 
-.members-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+small {
+  color: #7d7987;
 }
-.faculty-heading i{
-    color: var(--heading-blue);
-    font-size: 3rem;
+p {
+  margin-bottom: 0.3rem;
 }
 
-.head-faculties{
-    padding: 5%;
+/* Members  */
+
+.head-members {
+  height: 100vh;
+  text-align: center;
+  padding: 5% 0;
+  position: relative;
 }
-.faculty-heading{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-    text-align: center;
+.head-members .row {
+  width: 80%;
+  background-color: #e5f8fc;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
 }
-.faculty-heading h1{
-    margin: 0 20px;
-    color: var(--heading-blue);
-    font-weight: 600;
-    font-size: 2rem;
+.containersample {
+  padding: 6% 0;
 }
-.faculty-container{
-    text-align: center;
-    padding: 5% 5% 3%;
-    background-color: var(--container);
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 80px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+.containersample p {
+  color: #7d7987;
+  font-size: 0.9rem;
 }
-.faculty-container img{
-    height: 200px;
+.members-container h4 {
+  color: #00b4d8;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.head-heading {
+  margin-bottom: 20px;
 }
 
-.info h5{
-    color: var(--heading-blue);
-    margin: 10px 0;
+.head-members .containersample img {
+  max-width: 60%;
 }
-.info small{
-    color: var(--content);
+.containersample h5 {
+  margin-top: 20px;
+  color: #00b4d8;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.containersample small {
+  color: #00b4d8;
+  font-weight: 500;
 }
 
-@media only screen and (max-width: 1000px){
-    .head-faculties{
-        text-align: center;
-    }
-    .faculty-heading{
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-    .faculty-container{
-        grid-template-columns: auto;
-        gap: 30px;
-    }
-    .faculty-container img{
-        height: auto;
-    }
+.head-members .containersample small {
+  color: #7d7987;
+}
+
+@media only screen and (max-width: 992px) {
+  .head-members {
+    padding: 0;
+  }
+
+  .head-members .containersample img {
+    max-width: 30%;
+  }
+
+  .web-developers .member img {
+    max-width: 10%;
+  }
+  .head-members .row {
+    gap: 5px;
+    max-width: 100%;
+  }
+  .technova-members-container .heading .team {
+    max-width: 10%;
+  }
+  .head-members .members-container .head-heading .team {
+    max-width: 10%;
+  }
+}
+
+.head-members .top-dots {
+  max-width: 150px;
+  position: absolute;
+  left: 0;
 }
 
 /* Faculty Coordinators  */
-.container{
-    display: grid;
-    grid-template-columns: auto;
-    gap: 50px;
+
+.faculty-coordinators {
+  text-align: center;
+  color: #00b4d8;
+  position: relative;
+  height: 100vh;
 }
-.faculty-coordinators{
-    padding: 5%;
-}
-.faculty-coordinators i{
-    font-size: 3rem;
-    color: var(--heading-blue);
-}
-.faculty-club-container{
-    background-color: var(--container);
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    padding: 5% 5% 3%;
-    text-align: center;
+.faculty-coordinators-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
 
-.faculty-club-container-2{
-    background-color: var(--container);
-    display: grid;
-    grid-template-columns: auto auto auto;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    padding: 5% 5% 3%;
-    justify-content: space-evenly;
-    text-align: center;
+.faculty-coordinators .row {
+  max-width: 80%;
+  background-color: #e5f8fc;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
 }
 
-
-@media only screen and (max-width: 1000px){
-    .faculty-coordinators{
-        padding-bottom: 10%;
-    }
-    .faculty-club-container{
-        grid-template-columns: auto;
-        gap: 30px;
-        width: 100%;
-    }
-    .faculty-club-container-2{
-        grid-template-columns: auto;
-        gap: 30px;
-    }
+.faculty-coordinators .containersample img {
+  max-width: 50%;
 }
 
-/* WEB DEVELEPORS  */
-.web-devs{
-    padding: 4%;
-    text-align: center;
+.faculty-coordinators .top-dots {
+  position: absolute;
+  right: 0;
+  max-width: 150px;
 }
-.web-devs .faculty-heading{
-    margin-bottom: 0;
+.faculty-coordinators .bottom-dots {
+  position: absolute;
+  left: 0;
+  max-width: 150px;
 }
-.web-devs img{
-    height: 150px;
+.faculty-coordinators .containersample {
+  padding: 3% 0;
 }
-.small{
-    height: 200px;
+.faculty-coordinators h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
 }
-.web-dev-container{
-    width: 100%;
-    padding: 5%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
-    gap: 70px;
+.faculty-desc {
+  margin-top: 20px;
 }
-
-.web-dev-container .info small{
-    color: var(--heading-blue);
+.faculty-desc p {
+  color: #00b4d8;
+  font-weight: 600;
+  font-size: 1rem;
 }
-.web-dev-container .info h6{
-    color: var(--content);
-}
-@media only screen and (max-width: 1000px){
-
-    .web-dev-container{
-        grid-template-columns: auto;
-        gap: 50px;
-    }
-}
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .web-dev-container{
-        grid-template-columns: auto auto;
-    }
+.faculty-desc small {
+  color: #7d7987;
 }
 
-/* TEAM OF TECHNOVA  */
-.team-technova{
-    padding: 5%;
-}
-.team-technova img{
-    height: 150px;
-}
-.team-technova .faculty-club-container{
-    column-gap: 40px;
-}
-.team-technova .faculty-club-container-2{
-    column-gap: 20px;
-}
-.team-technova h6{
-    font-size: 0.9rem;
-}
-.team-technova .info small{
-    color: var(--heading-blue);
-}
-.team-technova .info h6{
-    color: var(--content);
+/* Website Developers  */
+.web-developers {
+  padding: 3% 0;
+  text-align: center;
+  color: #00b4d8;
+  position: relative;
+  height: 100vh;
 }
 
-
-/* CLUBS  */
-
-.club{
-    padding: 5%;
-    text-align: center;
+.web-developers-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
-.club .info h5 {
-    color: var(--content);
-}
-.club .info h6{
-    color: var(--heading-blue);
-}
-.club-heading{
-    margin: 20px 0;
-    color: var(--heading-blue);
-}
-.club-heading h3{
-    font-weight: 800;
-}
-.translate{
-    transform: translateY(3%);
-}
-.club-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 5%;
-    gap: 80px;
-    justify-content: space-between;
-    background-color: var(--container);
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    text-align: center;
-}
-.github-club .club-container{
-    gap: 110px;
-}
-.gdsc-club .club-container{
-    gap: 110px;
-}
-.game-drifters-club .club-container{
-    gap: 100px;
-}
-.cyber-pirates-club .club-container{
-    gap: 70px;
-}
-.modified{
-    height: 200px;
-}
-/* COORDINATORS  */
-.coordinators{
-    padding: 5%;
-    text-align: center;
-    width: 100%;
-}
-.main-container{
-    display: grid;
-    gap: 50px;
-}
-.coordinator-heading{
-    text-align: center;
-    margin: 30px 0;
-}
-.coordinator-heading h1{
-    margin: 0 20px;;
-    color: var(--heading-blue);
-    font-weight: 600;
-    font-size: 2rem;
-}
-.coordinators h3{
-    font-size: 1.2rem;
-    color: var(--heading-blue);
-    margin: 10px 0;
-}
-.coordinators-container-1{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-around;
-    gap: 20px;
-}
-.coordinators-container-2{
-    display: grid;
-    gap: 50px;
-    grid-template-columns: auto auto auto auto;
-    justify-content: center;
+.web-developers-container img {
+  max-width: 50%;
 }
 
-.coordinators .coordinator {
-    background-color: var(--container);
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+.web-developers-container h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
-.coordinators .coordinator{
-    width: 100%;
-    padding: 30px 50px 20px;
+.web-developers .row {
+  gap: 0px 0;
 }
-
-.coordinators img{
-    height: 90px;
-    border-radius: 50%;
+.web-developers .description {
+  transform: translateY(-80%);
 }
-.coordinators ul {
-    padding: 0;
+.member h6 {
+  font-weight: 600;
 }
-.coordinators ul li{
-    color: var(--content);
+.member p {
+  color: #7d7987;
 }
-.coordinators i{
-    color: var(--heading-blue);
-    font-size: 2.5rem;
+.member small {
+  color: #00b4d8;
 }
 
-@media only screen and (max-width: 1000px){
-    .club-container{
-        display: grid;
-        grid-template-columns: auto;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .coordinators-container-1{
-        display: grid;
-        grid-template-columns: auto;
-        gap: 40px;
-    }
-    .coordinators-container-2{
-        display: grid;
-        gap: 40px;
-        grid-template-columns: auto;
-    }
-    .coordinators .coordinators-container-2 .coordinator{
-        padding: 30px 70px 20px;
-    }
-    .github-club .club-container{
-        gap: 60px;
-    }
-    .gdsc-club .club-container{
-        gap: 60px;
-    }
-    .game-drifters-club .club-container{
-        gap: 60px;
-    }
-    .cyber-pirates-club .club-container{
-        gap: 60px;
-    }
-    .translate{
-        transform: translateY(0%);
-    }
-
+.web-developers .top-dots {
+  position: absolute;
+  right: 0;
+  max-width: 150px;
 }
-.top-dots{
-    position: absolute;
-    left: -20px;
-    top: 20px;
-    height: 70px;
-  }
 
-  @media only screen and (max-width: 290px){
-        .web-dev-container{
-            width: auto;
-        }
-        .web-devs h5{
-            font-size: 1.2rem;
-        }
-         .web-devs h6{
-            font-size: 0.8rem;
-        }
-        .team-technova{
-            padding: 0;
-        }
-        .team-technova .container{
-            padding: 0;
-        }
-        .team-technova h5{
-            font-size: 1rem;
-        }
-        .team-technova h6{
-            font-size: 0.8rem;
-        }
-        .club{
-            padding-bottom: 20px;
-        }
-        .club h5{
-            font-size: 1.2rem;
-        }
-        .club h6 {
-            font-size: 0.8rem;
-        }
+.web-developers .bottom-dots {
+  position: absolute;
+  left: 0;
+  max-width: 150px;
+}
 
-  }
+/* Technova team  */
+.technova-members {
+  text-align: center;
+  height: 100vh;
+  padding: 5% 0;
+  color: #00b4d8;
+  position: relative;
+}
+.technova-members-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.technova-members .containersample {
+  padding: 2% 5%;
+}
+
+.technova-members-container h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.technova-members .containersample p {
+  font-size: 0.9rem;
+}
+.technova-members .row {
+  max-width: 100%;
+  background-color: #e5f8fc;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+.technova-members .containersample img {
+  max-width: 70%;
+}
+.technova-members .containersample .smaller-img {
+  max-width: 60%;
+}
+
+.team {
+  max-width: 3%;
+}
+
+.technova-member h6 {
+  margin-top: 10px;
+}
+
+.technova-member small {
+  font-weight: 600;
+}
+
+.technova-members .top-dots {
+  position: absolute;
+  right: 0;
+  max-width: 150px;
+}
+
+.technova-members .center-dots {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  max-width: 150px;
+}
+
+/* ALL CLUBS  */
+
+/* Entrepreuners club  */
+
+.all-clubs {
+  max-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: conter;
+  align-items: center;
+  position: relative;
+  padding: 10% 0 5%;
+}
+.all-clubs .row {
+  width: 80%;
+  background-color: #caf1f8;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.all-clubs .containersample {
+  padding: 4% 0 7%;
+}
+
+.all-clubs h4 {
+  margin-top: 20px;
+}
+
+.all-clubs .clubs-top-dots {
+  position: absolute;
+  right: 0;
+  max-width: 150px;
+  top: 50px;
+}
+
+.all-clubs .clubs-bottom-dots {
+  position: absolute;
+  left: 0;
+  max-width: 150px;
+  bottom: 10px;
+}
+
+.smaller {
+  max-width: 60%;
+}
+
+.gdsc-leader {
+  max-width: 59%;
+}

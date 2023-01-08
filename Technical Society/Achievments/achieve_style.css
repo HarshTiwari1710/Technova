@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;800&family=Public+Sans:wght@300;400;700&display=swap");
+
+/* #FF00D6 */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Mulish", sans-serif;
+}
+/* Header section  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 3% 5%;
+  background-color: white;
+}
+
+.collapse {
+  text-align: right;
+}
+.nav-item {
+  margin-top: 20px;
+}
+
+nav h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: auto 0;
+  cursor: pointer;
+}
+nav h3 a {
+  text-decoration: none;
+  color: #00b4d8;
+}
+
+nav h3 a:hover {
+  color: #00b4d8;
+}
+nav ul {
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #7d7987;
+}
+
+.underline:hover {
+  color: #90e0ef;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #90e0ef;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.underline:hover::before {
+  transform: scaleX(1);
+  transition: 0.3s ease-in-out;
+}
+
+.highlight {
+  color: #90e0ef;
+  text-decoration: underline;
+}
+
+.highlight:hover {
+  color: #90e0ef;
+}
+
+.achievements {
+  padding: 2% 8%;
+  position: relative;
+  height: 100vh;
+}
+
+.dots {
+  position: absolute;
+  top: 50px;
+  max-width: 150px;
+  left: -50px;
+}
+
+.dots-img-2 {
+  position: absolute;
+  max-width: 170px;
+  bottom: 150px;
+  right: 0px;
+}
+
+.description {
+  margin-top: 20px;
+  color: #7d7987;
+  margin-bottom: 70px;
+  max-width: 90%;
+  text-align: justify;
+}
+
+.btn-container {
+  max-width: 50%;
+}
+
+.btn-explore {
+  background: linear-gradient(#01d1db, #00add8);
+  padding: 10px 30px;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-explore a {
+  color: white;
+  text-decoration: none;
+}
+
+.heading-achievements {
+  color: #04a3d0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+  letter-spacing: 0.2rem;
+}
+
+.images {
+  display: inline;
+  position: relative;
+  transform: translateX(-3%);
+}
+.trophy {
+  max-height: 110px;
+}
+.images img {
+  margin: 0 10px;
+}
+.images .sharda-logo {
+  max-height: 160px;
+}
+.achievement-image-container {
+  position: relative;
+}
+.achievement-image {
+  position: relative;
+  max-width: 85%;
+  margin-top: 50px;
+}
+
+.achievement-list {
+  text-align: center;
+  height: 100vh;
+  padding: 5% 0;
+}
+
+.achievements-heading {
+  color: #00a5d0;
+  line-height: 2.5;
+  font-size: 1.8rem;
+}
+
+.trophy-blue {
+  max-height: 75px;
+}
+
+.down:hover {
+  animation: animate 2s alternate infinite;
+  position: relative;
+}
+
+@keyframes animate {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 50px;
+  }
+}
